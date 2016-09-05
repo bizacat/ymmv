@@ -1,0 +1,25 @@
+---
+layout: default
+permalink: /experiences/
+---
+
+<div class="show-all">
+
+    {% for post in site.experiences %}
+
+        <a href="{{ post.url }}" class="experience col-sm-3">
+            <div class="content-area">
+                <p class="title">{{ post.title }}</p>
+                <p class="category">
+                    {% for category in post.categories %}
+                        {{ category }}
+                    {% endfor %}
+                </p>
+                <p class="author">{{ post.author }}</p>
+                <p class="date">{{ post.date | date: "%b %-d, %Y" }}</p>
+            </div>
+        </a>
+
+    {% endfor %}
+
+</div>

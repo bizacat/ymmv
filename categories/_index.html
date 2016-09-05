@@ -1,0 +1,17 @@
+---
+title: Categories
+date: 2020-01-01
+---
+
+{% assign categories =  site.experiences | map: 'categories' | join: ','  | split: ',' | uniq %}
+
+{% for category in categories %}
+    <h3>{{ category }}</h3>
+    <ul>
+        {% for post in site.experiences %}
+            {% if post.categories contains category %}
+                <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+{% endfor %}

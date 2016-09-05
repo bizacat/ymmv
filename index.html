@@ -1,0 +1,104 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <ul class="post-list">
+    {% for post in site.experiences limit:3 reversed %}
+      <li class="col-sm-4">
+        <div class="category-header {{ post.categories }}">
+          {% for category in post.categories %}
+          <h4 class="{{ category }}"><a href="{{ "/categories/" }}{{ category | prepend: site.baseurl | slugif }}">{{ category }}</a></h4>
+          {% endfor %}
+        </div>
+        <div class="content-area">
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+            <h2>{{ post.title }}</h2>
+          </a>
+          <table class="post-meta">
+            <tr>
+              <td class="author">{{ post.author }}</td>
+              <td class="date">{{ post.date | date: "%b %-d, %Y" }}</td>
+            </tr>
+          </table>
+
+          <section>
+            <table class="background">
+              <thead>
+              <tr>
+                <th>{{ post.mpw }}</th>
+                <th>{{ post.dpw }}</th>
+                <th>{{ post.hiit }}</th>
+                <th>{{ post.exp }}</th>
+              </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>mpw</td>
+                  <td>days</td>
+                  <td>workouts</td>
+                  <td>years</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          {% if post.symptoms != null %}
+          <section>
+
+            <p><strong>Symptoms</strong>
+            <ul>
+              {% for symptom in post.symptoms %}
+              <li>{{ symptom }}</li>
+              {% endfor %}
+            </ul>
+
+          </section>
+          {% endif %}
+          {% if post.causes != null %}
+          <section>
+            <p><strong>Cause</strong>
+            <ul>
+              {% for cause in post.causes %}
+                <li>{{ cause }}</li>
+              {% endfor %}
+            </ul>
+
+          </section>
+          {% endif %}
+          {% if post.time-off != null %}
+          <section>
+
+            <p><strong>Time Off</strong>
+            <p>{{ post.time-off }}</p>
+
+          </section>
+          {% endif %}
+          {% if post.treatments != null %}
+          <section>
+
+            <p><strong>Treatment</strong>
+            <ul>
+              {% for treatment in post.treatments %}
+                <li>{{ treatment }}</li>
+              {% endfor %}
+            </ul>
+
+          </section>
+          {% endif %}
+          <section>
+            <p class="tags">
+              {% for tag in post.tags %}
+              <a class="tag" href="{{ "/tags" {{ prepend: site.baseurl }}"> {{ tag }}</a>
+              {% endfor %}
+            </p>
+          </section>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+  <a href="{{ "/experiences" {{ prepend: site.baseurl }}">
+    <h2>Show all</h2>
+  </a>
+</div>

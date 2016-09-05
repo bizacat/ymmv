@@ -1,0 +1,56 @@
+---
+title: Tags
+date: 2020-01-01
+---
+
+
+{% comment %}
+=======================
+CAUSES
+=======================
+{% endcomment %}
+
+{% assign causes =  site.experiences | map: 'causes' | join: ','  | split: ',' | uniq %}
+
+
+{% comment %}
+=======================
+SYMPTOMS
+=======================
+{% endcomment %}
+
+{% assign symptomss =  site.experiences | map: 'symptomss' | join: ','  | split: ',' | uniq %}
+
+
+{% comment %}
+=======================
+TREAMTENT
+=======================
+{% endcomment %}
+
+{% assign treatments =  site.experiences | map: 'treatments' | join: ','  | split: ',' | uniq %}
+
+{% comment %}
+=======================
+TAGS
+=======================
+{% endcomment %}
+
+<div class="tag-page">
+
+    {% assign tags =  site.experiences | map: 'tags' | join: ','  | split: ',' | uniq | sort %}
+    {% for tag in tags %}
+        <div class="tag-box">
+            <h4 class="tag-title">{{ tag }}</h4>
+            {% for post in site.experiences %}
+                {% if post.tags contains tag %}
+                   <p>
+                       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                       <span> by {{ post.author }} ({{ post.date | date: "%b %-d, %Y" }})</span>
+                   </p>
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endfor %}
+
+</div>
