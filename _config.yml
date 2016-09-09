@@ -26,6 +26,9 @@ defaults:
 collections:
   experiences:
     output: true
+    defaults:
+      values:
+        layout: experience
   categories:
     output: true
 
