@@ -1,5 +1,6 @@
 ---
 title:  "Runner's Knee (Patellofemoral pain syndrome)"
+layout: experience
 date:   2016-06-03
 author: Chiuradr
 diag:
