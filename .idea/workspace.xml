@@ -91,11 +91,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_layout.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_layout.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_sass/_layout.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57584685">
+            <state vertical-scroll-proportion="-5.0128207">
               <caret line="118" column="25" selection-start-line="118" selection-start-column="25" selection-end-line="118" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.23778072">
+              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -153,7 +163,6 @@
         <option value="$PROJECT_DIR$/_stuff/stress-fracture.html" />
         <option value="$PROJECT_DIR$/_experiences/itbs-tony.markdown" />
         <option value="$PROJECT_DIR$/_experiences/hip-pain-labram-tim-stewart.markdown" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss" />
         <option value="$PROJECT_DIR$/_categories/stress-fracture.html" />
         <option value="$PROJECT_DIR$/_categories/lower-leg.html" />
@@ -167,6 +176,7 @@
         <option value="$PROJECT_DIR$/_experiences/tibial-stress-injury-scn.markdown" />
         <option value="$PROJECT_DIR$/_includes/header.html" />
         <option value="$PROJECT_DIR$/_sass/_layout.scss" />
+        <option value="$PROJECT_DIR$/_config.yml" />
       </list>
     </option>
   </component>
@@ -544,12 +554,12 @@
       <option name="number" value="Default" />
       <updated>1472583670462</updated>
       <workItem from="1472583671998" duration="19891000" />
-      <workItem from="1473088147124" duration="14926000" />
+      <workItem from="1473088147124" duration="15110000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34817000" />
+    <option name="totallyTimeSpent" value="35001000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="23" width="1376" height="877" extended-state="6" />
@@ -936,14 +946,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4953765">
-          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_experiences/hip-pain-labram-tim-stewart.markdown">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
@@ -1045,8 +1047,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_sass/_layout.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57584685">
+        <state vertical-scroll-proportion="-5.0128207">
           <caret line="118" column="25" selection-start-line="118" selection-start-column="25" selection-end-line="118" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23778072">
+          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
           <folding />
         </state>
       </provider>
