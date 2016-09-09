@@ -7,7 +7,7 @@ mpw: 30-40
 dpw: 6
 hiit: 3+
 exp: 5-10
-categories: [lower leg, stress-fracture]
+categories: [lower leg]
 symptoms: [Shin pain when running, Shin pain from light pressure (putting pants on)]
 causes: [High intensity training with no rest after experiencing symptoms, Not enough recovery, Easy runs too aggressive]
 time-off: '"Forever." Most of a track season'

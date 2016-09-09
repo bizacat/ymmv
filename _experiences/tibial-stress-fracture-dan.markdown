@@ -1,13 +1,13 @@
 ---
-title:  "Tibial Stress Reaction"
+title:  "Tibial Stress Fracture"
 date:   2016-06-03
-author: bizacat
+author: Dan
 diag: Professionally Diagnosed
 mpw: 50-60
 dpw: 7
 hiit: 3+
 exp: 5-10
-categories: [lower leg, stress fracture]
+categories: [lower leg]
 symptoms: [Pain in front of leg/shin (tibia) just below patella tendon attachment]
 causes: [Running too much/too fast (slow down!)]
 time-off: 8-10 weeks

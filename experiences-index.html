@@ -3,20 +3,20 @@ layout: default
 permalink: /experiences/
 ---
 
-<div class="show-all">
+<div class="compact-view">
 
     {% for post in site.experiences %}
 
-        <a href="{{ post.url }}" class="experience col-sm-3">
+        <a href="{{ post.url }}" class="experience col-sm-3 {{ post.categories }}">
             <div class="content-area">
+                <p class="date">{{ post.date | date: "%b %-d, %Y" }}</p>
                 <p class="title">{{ post.title }}</p>
+                <p class="author">{{ post.author }}</p>
                 <p class="category">
                     {% for category in post.categories %}
-                        {{ category }}
+                    <span>{{ category }}</span>
                     {% endfor %}
                 </p>
-                <p class="author">{{ post.author }}</p>
-                <p class="date">{{ post.date | date: "%b %-d, %Y" }}</p>
             </div>
         </a>
 

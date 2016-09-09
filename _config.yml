@@ -26,6 +26,8 @@ defaults:
 collections:
   experiences:
     output: true
+  categories:
+    output: true
 
 # Build settings
 markdown: kramdown

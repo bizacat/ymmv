@@ -1,6 +1,53 @@
 /**
  * Site header
  */
+
+.injury-form-link {
+    text-decoration: none !important;
+}
+
+.injury-form-button {
+    display: inline-block;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    font-size: 50px;
+    border: 2px solid white;
+    border-radius: 4px;
+    width: 60px;
+    height: 60px;
+    margin: 15px;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.5);
+    }
+    span {
+        display: block;
+        line-height: 1;
+        position: relative;
+        left: -2px;
+    }
+    &:after {
+        content: '< Injury form';
+        font-size: 11px;
+        opacity: 0.75;
+        text-align: left;
+        width: 85px;
+        position: absolute;
+        left: 70px;
+        top: 20px;
+        line-height: 1.125;
+    }
+}
+
+.injury-form-text {
+    color: white;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 1.25;
+    margin: 40px auto;
+}
+
 .site-header {
     min-height: 56px;
     background: #1b75bc;
@@ -12,8 +59,10 @@
 
 .title-area {
     float: left;
-    padding: 5px 15px 15px;
+    margin: 0 auto;
+    padding: 10px 15px;
     text-decoration: none !important;
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
     &:hover {
         opacity: 0.7;
     }
@@ -35,7 +84,8 @@
 }
 
 .site-nav {
-    float: right;
+    margin-top: $spacing-unit;
+    text-align: right;
     line-height: 56px;
 
     .menu-icon {
@@ -45,12 +95,13 @@
     .page-link {
         color: #ffffff;
         padding: 10px;
+        border: 2px solid rgba(0, 0, 0, 0.1);
         border-radius: 4px;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
-            margin-right: 20px;
+            margin-right: 10px;
         }
         &:hover {
             background: darken($link-color, 15%);
@@ -59,51 +110,13 @@
     }
 
     @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: $spacing-unit / 2;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
+        text-align: center;
+        background: darken(#1b75bc, 5%);
+        @include clearfix;
+        clear: both;
 
         .page-link {
-            display: block;
-            padding: 5px 10px;
-
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-            margin-left: 20px;
+            border: none;
         }
     }
 }
@@ -195,8 +208,8 @@
     margin-left: 0;
     list-style: none;
 
-    > li {
-        margin-bottom: $spacing-unit;
+    .row {
+        padding-bottom: $spacing-unit;
     }
 
     .content-area {
@@ -213,6 +226,7 @@
         
         ul {
             margin-left: 18px;
+            margin-bottom: 0;
         }
     }
 }
@@ -221,6 +235,80 @@
     margin-bottom: $spacing-unit;
     p {
         margin-left: $spacing-unit;
+    }
+}
+
+.compact-view {
+    [class*="lower"] {
+        color: #662d91;
+        &:hover .content-area {
+            background: rgba(102, 45, 145, 0.25);
+        }
+    }
+    [class*="foot"] {
+        color: #1b75bc;
+        &:hover .content-area {
+            background: rgba(27, 117, 188, 0.25);
+        }
+    }
+    [class*="thigh"] {
+        color: #f7931e;
+        &:hover .content-area {
+            background: rgba(247, 147, 30, 0.25);
+        }
+    }
+    [class*="knee"] {
+        color: #009245;
+        &:hover .content-area {
+            background: rgba(0, 146, 69, 0.25);
+        }
+    }
+    [class*="hip"] {
+        color: #da3f61;
+        &:hover .content-area {
+            background: rgba(218, 63, 97, 0.25);
+        }
+    }
+}
+
+[class*="lower"] {
+    .category-header {
+        background-color: #662d91;
+    }
+    .tag, .post-link {
+        color: #662d91;
+    }
+}
+[class*="foot"] {
+    .category-header {
+        background-color: #1b75bc;
+    }
+    .tag, .post-link {
+        color: #1b75bc;
+    }
+}
+[class*="thigh"] {
+    .category-header {
+        background-color: #f7931e;
+    }
+    .tag, .post-link {
+        color: #f7931e;
+    }
+}
+[class*="knee"] {
+    .category-header {
+        background-color: #009245;
+    }
+    .tag, .post-link {
+        color: #009245;
+    }
+}
+[class*="hip"] {
+    .category-header {
+        background-color: #da3f61;
+    }
+    .tag, .post-link {
+        color: #da3f61;
     }
 }
 
@@ -235,21 +323,7 @@
         &, a {
             color: #ffffff;
         }
-        &:after {
-            content: ', ';
-        }
-        &:last-child:after {
-            content: '';
-        }
-    }
-    &[class*="stress"] {
-        background-color: #ef4136;
-    }
-    &[class*="lower"] {
-        background-color: #662d91;
-    }
-    &[class*="foot"] {
-        background-color: #1b75bc;
+        @extend .commas;
     }
 }
 
@@ -279,7 +353,6 @@
 
 .tags {
     .tag {
-        color: $link-color;
         display: inline-block;
         white-space: nowrap;
         &:after {
@@ -347,17 +420,11 @@
     }
 }
 
-.show-all {
+.compact-view {
     .experience {
         padding-bottom: 15px;
         &:hover {
             text-decoration: none !important;
-            color: $link-color;
-            .content-area {
-                background: rgba($link-color, 0.25);
-            }
-            p {
-            }
         }
         .content-area {
             padding: $spacing-unit * 0.5;
@@ -370,7 +437,12 @@
             font-weight: bold;
             font-size: 18px;
             line-height: 1.25;
+        }
+        .author {
             margin-bottom: 10px;
+        }
+        .category span {
+            @extend .commas;
         }
     }
 }

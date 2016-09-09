@@ -43,6 +43,15 @@ $on-laptop:        800px;
     }
 }
 
+.commas {
+  &:after {
+    content: ', ';
+  }
+  &:last-child:after {
+    content: '';
+  }
+}
+
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)

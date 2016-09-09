@@ -7,7 +7,7 @@ mpw: 20-30
 dpw: 5
 hiit: 2
 exp: ≤1
-categories: [lower-leg]
+categories: [lower leg]
 symptoms: [Frequent dull pain along shins before and after a run, No shin pain during run, Time off]
 causes: [Sudden increase in intensity, Sudden increase in longer hard workouts, Symptoms]
 time-off: 4-8 weeks

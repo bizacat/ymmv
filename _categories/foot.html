@@ -1,0 +1,18 @@
+---
+title:  "Foot"
+date:   2016-06-03
+---
+
+
+<div class="category-index">
+
+    {% for post in site.experiences %}
+        {% if post.categories contains 'foot' %}
+            <p>
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                <span> by {{ post.author }} ({{ post.date | date: "%b %-d, %Y" }})</span>
+            </p>
+        {% endif %}
+    {% endfor %}
+
+</div>

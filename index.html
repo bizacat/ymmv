@@ -3,11 +3,11 @@ layout: default
 ---
 
 <div class="home">
-
-  <ul class="post-list">
-    {% for post in site.experiences limit:3 reversed %}
-      <li class="col-sm-4">
-        <div class="category-header {{ post.categories }}">
+  <div class="post-list">
+    {% for post in site.experiences reversed %}
+      {% cycle 'add row' : '<div class="row">', nil, nil %}
+        <div class="li col-sm-4 {{ post.categories }}">
+        <div class="category-header">
           {% for category in post.categories %}
           <h4 class="{{ category }}"><a href="{{ "/categories/" }}{{ category | prepend: site.baseurl | slugif }}">{{ category }}</a></h4>
           {% endfor %}
@@ -58,12 +58,9 @@ layout: default
           {% endif %}
           {% if post.causes != null %}
           <section>
-            <p><strong>Cause</strong>
-            <ul>
-              {% for cause in post.causes %}
-                <li>{{ cause }}</li>
-              {% endfor %}
-            </ul>
+
+            <p><strong>Causes</strong>
+            <p>{{ post.causes }}</p>
 
           </section>
           {% endif %}
@@ -78,12 +75,8 @@ layout: default
           {% if post.treatments != null %}
           <section>
 
-            <p><strong>Treatment</strong>
-            <ul>
-              {% for treatment in post.treatments %}
-                <li>{{ treatment }}</li>
-              {% endfor %}
-            </ul>
+            <p><strong>Treatments</strong>
+            <p>{{ post.treatments }}</p>
 
           </section>
           {% endif %}
@@ -95,10 +88,8 @@ layout: default
             </p>
           </section>
         </div>
-      </li>
+      </div>
+      {% cycle 'end row' : nil, nil, '</div>' %}
     {% endfor %}
-  </ul>
-  <a href="{{ "/experiences" {{ prepend: site.baseurl }}">
-    <h2>Show all</h2>
-  </a>
+  </div>
 </div>

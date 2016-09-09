@@ -7,7 +7,7 @@ mpw: 40-50
 dpw: 6
 hiit: 1
 exp: 1-2
-categories: [foot, stress fracture]
+categories: [foot]
 symptoms: [Severe sharp pain on top of foot when putting weight on foot]
 causes: [Big mileage/load increase, No rest after races, No structured training plan, New to mileage load]
 time-off: 10 weeks of no running, with 1-2 months of very gradual run/walk intervals

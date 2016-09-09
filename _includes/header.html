@@ -1,12 +1,21 @@
 <header class="site-header">
 
-  <div class="wrapper">
 
-    <a class="title-area col-sm-6" href="{{ site.baseurl }}/">
-      <span class="site-title">{{ site.title }}</span>
-      <span class="site-description">{{ site.description }}</span>
-    </a>
+  <div class="header-wrapper">
+    <div class="col-sm-5">
 
+      <a class="injury-form-link col-xs-5" alt="Submit your injury experience" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSct9W4nVKl-jiS-qUQqx6saE0FtWbfX7lzfUc1bgFL9a263Wg/viewform">
+        <div class="injury-form-button col-xs-6">
+          <span>+</span>
+        </div>
+      </a>
+
+      <a class="title-area col-xs-7" href="{{ site.baseurl }}/">
+        <span class="site-title">{{ site.title }}</span>
+        <span class="site-description">{{ site.description }}</span>
+      </a>
+
+    </div>
 
     <nav class="site-nav col-sm-6">
       <a href="#" class="menu-icon">
@@ -18,9 +27,9 @@
       </a>
 
       <div class="trigger">
-        {% for my_page in site.pages %}
+        {% for my_page in site.categories %}
           {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          <a class="page-link {{ my_page.title | slugify }}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
           {% endif %}
         {% endfor %}
       </div>
