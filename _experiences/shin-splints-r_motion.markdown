@@ -15,12 +15,6 @@ treatments: [Rest, Take enough time off, Come back slowly or pain will return]
 tags: [mtss, shin, shin pain, shin splints, stress, tibia, tibial stress]
 ---
 
->
-- **{{ page.mpw }}** miles per week
-- **{{ page.dpw }}** days per week
-- **{{ page.hiit }}** intense workouts per week
-- **{{ page.exp }}** years experience
-
 ### When did you begin to notice the injury? Are you aware of what may have brought it about such as sudden increase of mileage, other injuries, etc? What were the symptoms?
 
 Towards the end of a training cycle. Brought on by a sudden increase in intensity/longer hard workouts. High amounts of dull pain

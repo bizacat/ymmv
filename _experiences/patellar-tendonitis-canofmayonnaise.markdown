@@ -14,12 +14,6 @@ time-off: 2-3 months
 treatments: [Rest, Strengthening glutes and hips, Ice, Focusing on good form and technique]
 tags: [patella, patellar tendon, patellar tendonitis, knee, jumpers knee]
 ---
-
->
-- **{{ page.mpw }}** miles per week
-- **{{ page.dpw }}** days per week
-- **{{ page.hiit }}** intense workouts per week
-- **{{ page.exp }}** years experience
   
 ### When did you begin to notice the injury? Are you aware of what may have brought it about such as sudden increase of mileage, other injuries, etc? What were the symptoms?
 

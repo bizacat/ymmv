@@ -14,12 +14,6 @@ time-off: 1 month
 treatments: [Different shoes (New Balance Zantes), PT to strengthen glutes hips calves feet and core, Rest and cross training including yoga, Slow re-build of mileage with no speed work until full recovery, Running lighter on feet, Long run should be no more than 1/3 of weekly  mileage]
 tags: [shin, stress fracture, stress reaction, stress injury, stress]
 ---
-
->
-- **{{ page.mpw }}** miles per week
-- **{{ page.dpw }}** days per week
-- **{{ page.hiit }}** intense workouts per week
-- **{{ page.exp }}** years experience
   
 ### When did you begin to notice the injury? Are you aware of what may have brought it about such as sudden increase of mileage, other injuries, etc? What were the symptoms?
 

@@ -5,10 +5,23 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span>Submitted by </span><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    <p class="post-meta">
+      <span class="date">{{ page.date | date: "%b %-d, %Y" }}</span>
+      <span class="author">
+        <strong>Submitted by</strong> {{ page.author }}
+      </span>
+    </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
+    <div class="runner-data">
+      <ul>
+        <li>{{ page.mpw }} miles per week</li>
+        <li>{{ page.dpw }} days per week</li>
+        <li>{{ page.hiit }} intense workouts per week</li>
+        <li>{{ page.exp }} years experience</li>
+      </ul>
+    </div>
     {{ content }}
   </div>
 

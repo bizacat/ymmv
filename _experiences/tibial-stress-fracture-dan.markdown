@@ -14,12 +14,6 @@ time-off: 8-10 weeks
 treatments: [No running until fracture heals, Cross training for fitness, Ibuprofen for duration of injury to address inflammation, Run slower]
 tags: [shin, stress, stress fracture, stress reaction, tibia, tibial stress, tibial stress fracture]
 ---
-
->
-- **{{ page.mpw }}** miles per week
-- **{{ page.dpw }}** days per week
-- **{{ page.hiit }}** intense workouts per week
-- **{{ page.exp }}** years experience
   
 ### When did you begin to notice the injury? Are you aware of what may have brought it about such as sudden increase of mileage, other injuries, etc? What were the symptoms?
 

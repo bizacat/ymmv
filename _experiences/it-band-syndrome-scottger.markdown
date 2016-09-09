@@ -14,12 +14,6 @@ time-off: 6 weeks
 treatments: [Rest, Active Release Techniques (ART), Electromagnetic Stimulation Therapy]
 tags: [it band, ITBS, it band syndrome, knee, lateral knee]
 ---
-
->
-- **{{ page.mpw }}** miles per week
-- **{{ page.dpw }}** days per week
-- **{{ page.hiit }}** intense workouts per week
-- **{{ page.exp }}** years experience
   
 ### When did you begin to notice the injury? Are you aware of what may have brought it about such as sudden increase of mileage, other injuries, etc? What were the symptoms?
 

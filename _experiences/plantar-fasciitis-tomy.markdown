@@ -15,12 +15,6 @@ treatments: [Icing foot regularly, Rest until pain gone, Cross training to stren
 tags: [foot, arch, bottom of foot, plantar, plantar fasciitis]
 ---
 
->
-- **{{ page.mpw }}** miles per week
-- **{{ page.dpw }}** days per week
-- **{{ page.hiit }}** intense workouts per week
-- **{{ page.exp }}** years experience
-  
 ### When did you begin to notice the injury? Are you aware of what may have brought it about such as sudden increase of mileage, other injuries, etc? What were the symptoms?
 
 A year before it actually flared, my foot arch was feeling VERY tense but i never looked into it.

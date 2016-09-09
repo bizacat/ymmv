@@ -14,12 +14,6 @@ time-off: A couple of weeks
 treatments: [New shoes, Cross training, Rest until pain gone]
 tags: [extensor tendinopathy, extensor tendonitis, foot, top of foot]
 ---
-
->
-- **{{ page.mpw }}** miles per week
-- **{{ page.dpw }}** days per week
-- **{{ page.hiit }}** intense workouts per week
-- **{{ page.exp }}** years experience
   
 ### When did you begin to notice the injury? Are you aware of what may have brought it about such as sudden increase of mileage, other injuries, etc? What were the symptoms?
 

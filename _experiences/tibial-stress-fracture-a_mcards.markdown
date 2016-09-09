@@ -15,12 +15,6 @@ treatments: [Rest, Biking, swimming even better, Focus on good form during strid
 tags: [shin, stress, stress fracture, stress injury, stress reaction, tibia, tibial stress, tibial stress fracture, tibial stress injury, tibial stress reaction]
 ---
 
->
-- **{{ page.mpw }}** miles per week
-- **{{ page.dpw }}** days per week
-- **{{ page.hiit }}** intense workouts per week
-- **{{ page.exp }}** years experience
-
 ### When did you begin to notice the injury? Are you aware of what may have brought it about such as sudden increase of mileage, other injuries, etc? What were the symptoms?
 
 I had noticed some pain early on in the track season but kept pushing forward. Definitely due to taking easy runs too aggressive and not properly recovering. Finally threw in the towel once I was having night terrors and putting pants on hurt my shin. Yay high school mindset!

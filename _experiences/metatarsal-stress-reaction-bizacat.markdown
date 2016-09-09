@@ -1,5 +1,6 @@
 ---
 title:  "Metatarsal Stress Reaction"
+layout: experience
 date:   2016-08-30
 author: bizacat
 diag: Professionally Diagnosed
@@ -14,12 +15,6 @@ time-off: 10 weeks of no running, with 1-2 months of very gradual run/walk inter
 treatments: [Rest, Cross training, Easy return to running]
 tags: [foot, metatarsal, stress, stress fracture, stress injury, stress reaction, top of foot]
 ---
-
->
-- **{{ page.mpw }}** miles per week
-- **{{ page.dpw }}** days per week
-- **{{ page.hiit }}** intense workouts per week
-- **{{ page.exp }}** years experience
   
 ### When did you begin to notice the injury? Are you aware of what may have brought it about such as sudden increase of mileage, other injuries, etc? What were the symptoms?
 

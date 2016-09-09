@@ -15,12 +15,6 @@ time-off: 2 weeks with easy running for 1 month after
 treatments: [Rest, Easy return to running]
 tags: [patella, patellar tendon, patellar tendonitis, patellofemoral syndrome, pfps, knee, lateral knee]
 ---
-
->
-- **{{ page.mpw }}** miles per week
-- **{{ page.dpw }}** days per week
-- **{{ page.hiit }}** intense workouts per week
-- **{{ page.exp }}** years experience
   
 ### When did you begin to notice the injury? Are you aware of what may have brought it about such as sudden increase of mileage, other injuries, etc? What were the symptoms?
 
