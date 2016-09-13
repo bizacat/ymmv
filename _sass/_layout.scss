@@ -140,6 +140,36 @@
     text-align: center;
 }
 
+.home-section {
+    padding-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit;
+    border-bottom: 1px dotted lightgray;
+    &.categories {
+        ul{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+            li {
+                list-style-type: none;
+                display: inline-block;
+                margin: 0 $spacing-unit * 0.5;
+                font-size: 21px;
+                height: 100px;
+                width: 100px;
+                vertical-align: middle;
+                border-radius: 2px;
+            }
+        }
+        a {
+            padding: $spacing-unit * 0.25 $spacing-unit * 0.5;
+            display: block;
+            line-height: 1;
+            margin-top: 30px;
+        }
+    }
+}
+
 /**
  * Site footer
  */
@@ -255,39 +285,6 @@
     }
 }
 
-.compact-view {
-    [class*="lower"] {
-        color: #662d91;
-        &:hover .content-area {
-            background: rgba(102, 45, 145, 0.25);
-        }
-    }
-    [class*="foot"] {
-        color: #1b75bc;
-        &:hover .content-area {
-            background: rgba(27, 117, 188, 0.25);
-        }
-    }
-    [class*="thigh"] {
-        color: #f7931e;
-        &:hover .content-area {
-            background: rgba(247, 147, 30, 0.25);
-        }
-    }
-    [class*="knee"] {
-        color: #009245;
-        &:hover .content-area {
-            background: rgba(0, 146, 69, 0.25);
-        }
-    }
-    [class*="hip"] {
-        color: #da3f61;
-        &:hover .content-area {
-            background: rgba(218, 63, 97, 0.25);
-        }
-    }
-}
-
 [class*="lower"] {
     .category-header {
         background-color: #662d91;
@@ -326,6 +323,48 @@
     }
     .tag, .post-link {
         color: #da3f61;
+    }
+}
+
+.home-section.categories {
+    li a {
+        color: #ffffff;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    [class*="lower"] {
+       background-color: #662d91;
+        &:hover {
+            background-color: darken(#662d91, 15%);
+        }
+        a {
+            margin-top: 20px;
+        }
+    }
+    [class*="foot"] {
+       background-color: #1b75bc;
+        &:hover {
+            background-color: darken(#1b75bc, 15%);
+        }
+    }
+    [class*="thigh"] {
+       background-color: #f7931e;
+        &:hover {
+            background-color: darken(#f7931e, 15%);
+        }
+    }
+    [class*="knee"] {
+       background-color: #009245;
+        &:hover {
+            background-color: darken(#009245, 15%);
+        }
+    }
+    [class*="hip"] {
+       background-color: #da3f61;
+        &:hover {
+            background-color: darken(#da3f61, 15%);
+        }
     }
 }
 
@@ -433,33 +472,6 @@
 
         @include media-query($on-laptop) {
             font-size: 18px;
-        }
-    }
-}
-
-.compact-view {
-    .experience {
-        padding-bottom: 15px;
-        &:hover {
-            text-decoration: none !important;
-        }
-        .content-area {
-            padding: $spacing-unit * 0.5;
-            border-radius: 4px;
-        }
-        p {
-            margin: 0;
-        }
-        .title {
-            font-weight: bold;
-            font-size: 18px;
-            line-height: 1.25;
-        }
-        .author {
-            margin-bottom: 10px;
-        }
-        .category span {
-            @extend .commas;
         }
     }
 }

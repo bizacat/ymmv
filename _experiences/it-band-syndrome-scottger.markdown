@@ -1,6 +1,6 @@
 ---
 title:  "IT Band Syndrome (Lateral Knee Pain)"
-date:   2016-06-21
+date:   2016-06-21 14:00:40 -0500
 author: ScottGer
 diag: Professionally Diagnosed
 mpw: 30-40
