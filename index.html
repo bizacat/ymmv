@@ -16,7 +16,7 @@ layout: default
     </ul>
   </section>
   <section class="home-section posts">
-    <h2 class="home-title">Or browse the most recently submitted experiences:</h2>
+    <h2 class="home-title"><a href="{{ "/browse-all" | prepend: site.baseurl }}">Or browse the most recently submitted experiences:</a></h2>
     <div class="post-list">
       {% assign sorted_experiences = site.experiences | sort:"date" | reverse %}
       {% for post in sorted_experiences | limit: 3 %}
@@ -83,5 +83,6 @@ layout: default
       {% cycle 'end row' : nil, nil, '</div>' %}
       {% endfor %}
     </div>
+    <a class="see-more" href="{{ "/browse-all" | prepend: site.baseurl }}">See more ></a>
   </section>
 </div>

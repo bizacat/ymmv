@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="browse-all">
-  <h2 class="home-title">Browse all submitted experiences</h2>
+  <h2 class="home-title">All submitted experiences</h2>
   <div class="post-list">
     {% assign sorted_experiences = site.experiences | sort:"date" | reverse %}
     {% for post in sorted_experiences %}

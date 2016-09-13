@@ -143,8 +143,8 @@
 .home-section {
     padding-bottom: $spacing-unit;
     margin-bottom: $spacing-unit;
-    border-bottom: 1px dotted lightgray;
     &.categories {
+        border-bottom: 1px dotted lightgray;
         ul{
             margin: 0;
             padding: 0;
@@ -167,6 +167,10 @@
             line-height: 1;
             margin-top: 30px;
         }
+    }
+    .see-more {
+        float: right;
+        font-size: 18px;
     }
 }
 
