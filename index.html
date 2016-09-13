@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div class="home">
+  <h1 class="home-title">Most recently submitted experiences:</h1>
   <div class="post-list">
     {% for post in site.experiences reversed %}
       {% cycle 'add row' : '<div class="row">', nil, nil %}
