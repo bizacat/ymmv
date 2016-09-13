@@ -60,7 +60,11 @@ layout: default
           <section>
 
             <p><strong>Causes</strong>
-            <p>{{ post.causes }}</p>
+            <ul>
+              {% for cause in post.causes %}
+              <li>{{ cause }}</li>
+              {% endfor %}
+            </ul>
 
           </section>
           {% endif %}
@@ -76,7 +80,11 @@ layout: default
           <section>
 
             <p><strong>Treatments</strong>
-            <p>{{ post.treatments }}</p>
+            <ul>
+              {% for treatment in post.treatments %}
+                <li>{{ treatment }}</li>
+              {% endfor %}
+            </ul>
 
           </section>
           {% endif %}
