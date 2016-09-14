@@ -159,6 +159,11 @@
                 width: 100px;
                 vertical-align: middle;
                 border-radius: 2px;
+                @include media-query($on-palm) {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
             }
         }
         a {
