@@ -160,9 +160,13 @@
                 vertical-align: middle;
                 border-radius: 2px;
                 @include media-query($on-palm) {
-                    width: 100%;
+                    width: 90%;
                     height: auto;
                     display: block;
+                    margin: 0 auto;
+                    a {
+                        margin-top: $spacing-unit * 0.5;
+                    }
                 }
             }
         }
