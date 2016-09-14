@@ -7,7 +7,7 @@ mpw: 10-20
 dpw: 5
 hiit: 2
 exp: ≤3 months
-categories: [knee, thigh]
+categories: [knee]
 symptoms: [Knee pain every step]
 causes: [Big mileage/load increase, Bad form]
 time-off: 2-3 months

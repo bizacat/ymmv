@@ -8,7 +8,7 @@ mpw: 30-40
 dpw: 4
 hiit: 2
 exp: ≤1
-categories: [knee, thigh]
+categories: [knee]
 symptoms:
 causes: [Big mileage/load increase]
 time-off: 2 weeks with easy running for 1 month after

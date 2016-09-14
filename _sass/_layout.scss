@@ -271,6 +271,10 @@
     .row {
         padding-bottom: $spacing-unit;
     }
+    
+    .li {
+        margin-bottom: $spacing-unit * 0.5;
+    }
 
     .content-area {
         background: #f7f7f7;
@@ -314,7 +318,7 @@
         color: #1b75bc;
     }
 }
-[class*="thigh"] {
+[class*="thigh"], .category-page.thigh-all {
     .category-header {
         background-color: #f7931e;
     }
