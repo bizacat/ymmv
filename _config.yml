@@ -10,7 +10,7 @@ title: YMMV
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Your mileage may vary. Runners share their experiences with running injuries.
-baseurl: "http://bizacat.github.io/ymmv" # the subpath of your site, e.g. /blog
+baseurl: "https://bizacat.github.io/ymmv" # the subpath of your site, e.g. /blog
 url: "https://bizacat.github.io/ymmv/" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
